@@ -1,0 +1,56 @@
+body {
+  @include flex-forever;
+  flex-direction: column;
+}
+
+#color-guide {
+  @include card-size(40rem, 5rem);
+  //when I inserted the size, it stopped being centered
+  @include flex-forever;
+  justify-content: space-between;
+
+  .card {
+    @include card-size(9rem, 6rem);
+    @include flex-forever;
+
+    .shade {
+      @include card-size(3rem, 6rem);
+    }
+    .shade.light-one {
+      background-color: $shade-light-one;
+    }
+    .shade.medium-one {
+      background-color: $shade-medium-one;
+    }
+    .shade.dark-one {
+      background-color: $shade-dark-one;
+    }
+    .shade.light-two {
+      background-color: $shade-light-two;
+    }
+    .shade.medium-two {
+      background-color: $shade-medium-two;
+    }
+    .shade.dark-two {
+      background-color: $shade-dark-two;
+    }
+    .shade.light-three {
+      background-color: $shade-light-three;
+    }
+    .shade.medium-three {
+      background-color: $shade-medium-three;
+    }
+    .shade.dark-three {
+      background-color: $shade-dark-three;
+    }
+    .shade.light-four {
+      background-color: $shade-light-four;
+    }
+    .shade.medium-four {
+      background-color: $shade-medium-four;
+    }
+    .shade.dark-four {
+      background-color: $shade-dark-four;
+    }
+  }
+}
